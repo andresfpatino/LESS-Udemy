@@ -1,0 +1,37 @@
+.esquema(opaco;) {
+	color: darken(@colorbase, 20%);
+}
+.esquema(vivo;) {
+	color: lighten(@colorbase, 20%);
+}
+.esquema(@_) {
+	color: @colorbase;
+}
+
+.esquema2(opaco;) {
+
+	color: darken(@colorbase, 20%);
+}
+
+.esquema2(opaco; @porcentaje) {
+
+	color: fade(@colorbase, @porcentaje);
+}
+
+.ancho(@width) when (@ancho = 50%), (@ancho < 70%) {
+	margin: 0 auto;
+}
+
+.mediaquery(@float : none) when (@bp = mobile) {
+	width: 100%;
+	float: @float;
+}
+
+.mediaquery(@float : left) when not (@bp = desktop) {
+	width: 50%;
+	float: @float;
+}
+.mediaquery(@float : left) when (@bp = desktop) {
+	width: 50%;
+	float: @float;
+}

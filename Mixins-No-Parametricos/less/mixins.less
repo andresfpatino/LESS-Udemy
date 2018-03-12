@@ -1,0 +1,64 @@
+.square {
+	background-color: @basecolor;
+	border: 2px solid @bordercolor;
+}
+
+.clearfix {
+*zoom : 1;
+&:before,
+&:after {
+display: table;
+content : ""; }
+&:after {
+clear : both; } }
+
+.anchomaximo {
+	max-width: @anchomaximo;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// Agregamos (...) al texto que queda escondido 
+.text-overflow() {
+overflow : hidden;
+text-overflow : ellipsis;
+white-space : nowrap; }
+
+
+// Esconder texto, para reemplazar con imagen
+.esconder-texto() {
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden; }
+
+
+// Esconder visualmente del navegador
+.esconder() {
+display : none !important; 
+visibility : hidden; }
+
+// Esconder pero manteniendo el layout
+.invisible() { 
+visibility : hidden; }
+
+
+// Esconder pero dejar visible para navegadores de voz (Screenreaders)
+.visualmenteescondido() { 
+overflow : hidden; 
+position : absolute;
+clip : rect(0 0 0 0); 
+height : 1px; 
+width : 1px;
+margin : -1px; 
+padding : 0; 
+border : 0; }
+
+// Esconder pero permitir hacerle target con el teclado
+.visualmenteescondido.focusable:active, 
+.visualmenteescondido.focusable:focus { 
+position : static;
+clip : auto; 
+height : auto; 
+width : auto;
+margin : 0; 
+overflow: visible; }

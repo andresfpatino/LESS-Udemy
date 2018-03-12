@@ -1,0 +1,20 @@
+@colorbase : olive;
+@ancho : 80%;
+@bp : desktop;
+
+//posibles opciones: vivo y opaco;
+@esquema : opaco;
+
+h1 {
+	.esquema(@esquema);
+}
+
+h2 {
+	.esquema2(@esquema);
+}
+
+article {
+	.ancho(70%);
+	.mediaquery();
+}
+

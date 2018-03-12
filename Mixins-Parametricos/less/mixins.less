@@ -1,0 +1,23 @@
+.max-width {
+	max-width: @maxwidth;
+}
+
+.border-box(@box : border-box) {
+	-webkit-box-sizing: @box;
+	-moz-box-sizing: @box;
+	-ms-box-sizing: @box;
+	box-sizing: @box;
+	
+}
+
+.font-size(@size: 16) {
+	@rem : @size / 16;
+	font-size: @size * 1px;
+	font-size: ~"@{rem}rem";
+}
+
+.sombra(@ejeX: 1px, @ejeY: 1px, @desenf: 2px, @alpha: 0.5) {
+	-moz-box-shadow: @ejeX @ejeY @desenf rgba(0,0,0,@alpha);
+	-webkit-box-shadow: @ejeX @ejeY @desenf rgba(0,0,0,@alpha);
+	box-shadow: @ejeX @ejeY @desenf rgba(0,0,0,@alpha);
+}

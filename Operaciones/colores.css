@@ -1,0 +1,8 @@
+.elemento {
+  border-top: 1px solid #003300;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #b3b3b3;
+  border-left: 1px solid #d9d9d9;
+  background-color: #ff00d4;
+  box-shadow: 1px 1px 1px rgba(0, 153, 0, 0.9);
+}

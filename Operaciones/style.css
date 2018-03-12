@@ -1,0 +1,21 @@
+.VariableHola {
+  content: "Te saludo y Me Despido";
+}
+.VariableSuma {
+  content: 60;
+}
+.VariableResta {
+  content: 20;
+}
+.VariableDivision {
+  content: 2;
+}
+.VariableMultiplicacion {
+  content: 800;
+}
+.VariableTotal {
+  content: 40.5;
+}
+.VariableFuncion {
+  content: false;
+}

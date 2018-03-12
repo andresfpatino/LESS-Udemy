@@ -1,0 +1,77 @@
+.square {
+  background-color: #280501;
+  border: 2px solid #8c1103;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.anchomaximo {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.visualmenteescondido.focusable:active,
+.visualmenteescondido.focusable:focus {
+  position: static;
+  clip: auto;
+  height: auto;
+  width: auto;
+  margin: 0;
+  overflow: visible;
+}
+.square1 {
+  width: 17%;
+  height: 100px;
+  float: left;
+  background-color: #280501;
+  border: 2px solid #8c1103;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+}
+.square2 {
+  width: 80%;
+  height: 100px;
+  float: right;
+  background-color: #280501;
+  border: 2px solid #8c1103;
+}
+@media all and (min-width: 600px) {
+  .square1,
+  .square2 {
+    width: 200px;
+  }
+  .contenedor-squares {
+    *zoom: 1;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contenedor-squares:before,
+  .contenedor-squares:after {
+    display: table;
+    content: "";
+  }
+  .contenedor-squares:after {
+    clear: both;
+  }
+  p {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media all and (min-width: 800px) {
+  p {
+    max-width: 100%;
+  }
+}

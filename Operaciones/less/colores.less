@@ -1,0 +1,21 @@
+@negro      : #000;
+@blanco     : #fff;
+@verde      : #00ff00;
+@comp       : spin(@verde, 190);
+@bordercolor :darken(@verde, 40%);
+
+@grisoscuro    :darken(@blanco, 80%);
+@gris  		   :darken(@blanco, 50%);
+@grisclaro     :darken(@blanco, 30%);
+@grismasclaro :darken(@blanco, 15%);
+
+@crazycolor: fade(darken(@verde, 20%), 90%);
+
+.elemento {
+	border-top: 1px solid @bordercolor;
+	border-right: 1px solid @grisoscuro;
+	border-bottom: 1px solid @grisclaro;
+	border-left: 1px solid @grismasclaro;
+	background-color: @comp;
+	box-shadow: 1px 1px 1px @crazycolor;
+}

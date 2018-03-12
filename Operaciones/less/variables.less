@@ -1,0 +1,23 @@
+// Operaciones con Variables
+@hola :"Te saludo";
+
+@ciao:"Me Despido";
+
+@saludo : "@{hola} y @{ciao}";
+
+@variable1 :40;
+@variable2 :20;
+
+//Simples operaciones matemáticas
+@suma :@variable1 + @variable2;
+@resta :@variable1 - @variable2;
+@division :@variable1 / @variable2;
+@mult :@variable1 * @variable2;
+
+@total : (@variable2 / @variable1) + @variable1;
+
+//Funciones integradas en LESS
+@cos :cos(1);
+@redondear:floor(@cos);
+
+@funcion:isstring(@redondear);
